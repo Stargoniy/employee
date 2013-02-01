@@ -56,29 +56,6 @@
             }
         }
     %>
-    <%--<p style="color: <%=colors.get("name")%>"><b>First name:</b><br>--%>
-        <%--<input name="name" type="text" size="40" value="<%=checkValue(request.getParameter("name"))%>">--%>
-    <%--</p>--%>
-
-    <%--<p style="color: <%=colors.get("surname")%>"><b>Surname:</b><br>--%>
-        <%--<input name="surname" type="text" size="40" value="<%=checkValue(request.getParameter("surname"))%>">--%>
-    <%--</p>--%>
-
-    <%--<p style="color: <%=colors.get("email")%>"><b>E-Mail:</b><br>--%>
-        <%--<input name="email" type="text" size="40" value="<%=checkValue(request.getParameter("email"))%>">--%>
-    <%--</p>--%>
-
-    <%--<p style="color: <%=colors.get("pass")%>"><b>Password:</b><br>--%>
-        <%--<input name="pass" type="password" size="40" value="<%=checkValue(request.getParameter("pass"))%>">--%>
-    <%--</p>--%>
-
-    <%--<p style="color: <%=colors.get("confpass")%>"><b>Confirm password:</b><br>--%>
-        <%--<input name="confpass" type="password" size="40" value="<%=checkValue(request.getParameter("confpass"))%>">--%>
-    <%--</p>--%>
-
-    <%--<p style="color: <%=colors.get("birhdate")%>"><b>Birth date:</b><br>--%>
-        <%--<input name="birhdate" type="text" size="40" value="<%=checkValue(request.getParameter("birhdate"))%>">--%>
-    <%--</p>--%>
 
     <p style="color: <%=colors.get("name")%>"><b>First name:</b><br>
         <input name="name" type="text" size="40" value="<%=setFieldParam(request, "name")%>">
