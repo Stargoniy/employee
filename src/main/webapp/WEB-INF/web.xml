@@ -24,6 +24,11 @@
         <servlet-class>com.in6k.servletdemo.servlet.UserListServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>formservlet</servlet-name>
+        <servlet-class>com.in6k.servletdemo.servlet.FormServlet</servlet-class>
+    </servlet>
+
     <!--<servlet-mapping>-->
         <!--<servlet-name>simpleservlet</servlet-name>-->
         <!--<url-pattern>/welcome</url-pattern>-->
@@ -42,5 +47,10 @@
     <servlet-mapping>
         <servlet-name>userlistservlet</servlet-name>
         <url-pattern>/userlist</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>formservlet</servlet-name>
+        <url-pattern>/form</url-pattern>
     </servlet-mapping>
 </web-app>
