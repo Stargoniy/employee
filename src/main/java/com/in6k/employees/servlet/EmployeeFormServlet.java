@@ -1,21 +1,14 @@
 package com.in6k.employees.servlet;
 
-import com.in6k.employees.User;
 import com.in6k.employees.domain.EmployeeModel;
 import com.in6k.employees.form.EmployeeForm;
 import com.in6k.employees.persistance.ProviderFactory;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.beans.XMLEncoder;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 public class EmployeeFormServlet extends HttpServlet {
