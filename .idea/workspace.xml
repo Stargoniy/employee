@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127b4ecb-7135-49c8-8830-1fa168aac351" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/FormServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/FormValidatorServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/SimpleServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/UserListServlet.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/qqq111q@gmail.com.xml" afterPath="$PROJECT_DIR$/users/qqq111q@gmail.com.xml" />
     </list>
     <ignored path="employees.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +16,7 @@
     <file path="/a.dummy" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359713268153" ignored="false" />
     <file path="/pom.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359712908610" ignored="false" />
     <file path="/Dummy.txt" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359712928325" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359713658182" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359714066871" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="6" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.63684213">
+            <state line="50" column="27" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6052632">
               <folding>
                 <element signature="e#1518#1534#0" expanded="true" />
               </folding>
@@ -777,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="79" selection-start="586" selection-end="586" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
@@ -810,9 +798,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="79" selection-start="586" selection-end="586" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="6" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.63684213">
+        <state line="50" column="27" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6052632">
           <folding>
             <element signature="e#1518#1534#0" expanded="true" />
           </folding>
