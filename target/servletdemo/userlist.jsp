@@ -14,11 +14,13 @@
     List<User> users = (List<User>)request.getAttribute("users");
     for (User u: users) {
         %>
-            <h3 style="color: #6005ff"><%=u.getEmail() + " "%><input type="submit" value="edit"></h3>
-            <h4><%="Name: " + u.getName()%></h4>
-            <h4><%="SurName: " + u.getSurName()%></h4>
-            <h4><%="Password: " + u.getPass()%></h4>
-            <h4><%="Birth dade: " + u.getBirhdate()%></h4>
+            <form name="test" method="post" action="index.jsp">
+                <h3 style="color: #6005ff"><%=u.getEmail() + " "%><input type="submit" value="edit"></h3>
+                <h4><%="Name: " + u.getName()%></h4>
+                <h4><%="SurName: " + u.getSurName()%></h4>
+                <h4><%="Password: " + u.getPass()%></h4>
+                <h4><%="Birth dade: " + u.getBirhdate()%></h4>
+            </form>
         <%
     }
 %>
