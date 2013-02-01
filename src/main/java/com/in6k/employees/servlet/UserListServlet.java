@@ -27,6 +27,5 @@ public class UserListServlet extends HttpServlet{
         }
         req.setAttribute("users", users);
         req.getRequestDispatcher("/userlist.jsp").include(req, resp);
-//        resp.sendRedirect("userlist.jsp");
     }
 }

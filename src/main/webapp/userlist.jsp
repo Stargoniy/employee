@@ -13,15 +13,12 @@
 <%
     List<User> users = (List<User>)request.getAttribute("users");
     for (User u: users) {
-//        request.setAttribute("user", u);
         %>
-            <%--<form name="test" method="post" action="index.jsp">--%>
             <h3 style="color: #6005ff"><%=u.getEmail() + " "%><a href=<%="form?email=" + u.getEmail()%>>edit</a></h3>
             <h4><%="Name: " + u.getName()%></h4>
             <h4><%="SurName: " + u.getSurName()%></h4>
             <h4><%="Password: " + u.getPass()%></h4>
             <h4><%="Birth dade: " + u.getBirhdate()%></h4>
-            <%--</form>--%>
         <%
     }
 %>

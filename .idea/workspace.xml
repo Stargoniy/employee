@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127b4ecb-7135-49c8-8830-1fa168aac351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/qqq111q@gmail.com.xml" afterPath="$PROJECT_DIR$/users/qqq111q@gmail.com.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/userlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
     </list>
     <ignored path="employees.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +19,7 @@
     <file path="/a.dummy" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359713268153" ignored="false" />
     <file path="/pom.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359712908610" ignored="false" />
     <file path="/Dummy.txt" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359712928325" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359714066871" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1359715780675" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
       <file leaf-file-name="FormValidatorServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="94" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-6.714286">
+            <state line="38" column="0" selection-start="1883" selection-end="1883" vertical-scroll-proportion="13.535714">
               <folding />
             </state>
           </provider>
@@ -87,7 +90,7 @@
       <file leaf-file-name="UserListServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="28" column="69" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#720#726#0" expanded="true" />
@@ -99,9 +102,9 @@
       <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="27" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6052632">
+            <state line="19" column="80" selection-start="540" selection-end="540" vertical-scroll-proportion="0.5">
               <folding>
-                <element signature="e#1518#1534#0" expanded="true" />
+                <element signature="e#1475#1491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,7 +149,7 @@
       <file leaf-file-name="userlist.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="79" selection-start="586" selection-end="586" vertical-scroll-proportion="-11.25">
+            <state line="14" column="25" selection-start="380" selection-end="380" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -184,12 +187,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/UserListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/FormValidatorServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/servletdemo/servlet/FormServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
@@ -649,7 +652,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -670,7 +673,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.670247" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2498615" sideWeight="0.670247" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2498615" sideWeight="0.670247" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -742,13 +745,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
@@ -772,13 +768,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="380" selection-end="380" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/UserListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+        <state line="28" column="69" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#720#726#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1883" selection-end="1883" vertical-scroll-proportion="13.535714">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,25 +808,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employees/servlet/FormValidatorServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="94" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-6.714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="79" selection-start="586" selection-end="586" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="27" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6052632">
+        <state line="19" column="80" selection-start="540" selection-end="540" vertical-scroll-proportion="0.5">
           <folding>
-            <element signature="e#1518#1534#0" expanded="true" />
+            <element signature="e#1475#1491#0" expanded="true" />
           </folding>
         </state>
       </provider>

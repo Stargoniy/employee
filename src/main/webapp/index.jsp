@@ -18,7 +18,6 @@
             return value != null ? value : "";
         }
         private String setFieldParam(HttpServletRequest request, String value) {
-//            request.getParameter(value);
             String result = "";
             User user;
             if (request.getAttribute("user") != null) {

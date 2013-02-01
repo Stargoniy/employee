@@ -36,12 +36,6 @@ public class FormValidatorServlet extends HttpServlet {
 
         if (isValid(req)) {
             User user = new User(req.getParameter("name"), req.getParameter("surname"), req.getParameter("email"), req.getParameter("pass"), req.getParameter("birhdate"));
-//            User user = new User();
-//            user.setName(req.getParameter("name"));
-//            user.setSurName(req.getParameter("surname"));
-//            user.setEmail(req.getParameter("email"));
-//            user.setPass(req.getParameter("pass"));
-//            user.setBirhdate(req.getParameter("birhdate"));
 
             FileOutputStream fos = new FileOutputStream("/home/employee/IdeaProjects/employees/users/" + req.getParameter("email") + ".xml");
             XMLEncoder xenc = new XMLEncoder(fos);
@@ -54,8 +48,6 @@ public class FormValidatorServlet extends HttpServlet {
         } else {
             req.setAttribute("valid", errors);
             req.getRequestDispatcher("/index.jsp").include(req, resp);
-//            FormServlet formServlet = new FormServlet();
-//            formServlet.doGet(req, resp);
         }
     }
 
