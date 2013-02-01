@@ -50,7 +50,7 @@ public class FormValidatorServlet extends HttpServlet {
             xenc.close();
             fos.close();
 
-//            resp.sendRedirect("/success.jsp");
+            resp.sendRedirect("/userlist");
         } else {
             req.setAttribute("valid", errors);
             req.getRequestDispatcher("/index.jsp").include(req, resp);
