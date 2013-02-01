@@ -7,16 +7,20 @@ import com.in6k.employees.persistance.ProviderFactory;
 import java.io.IOException;
 
 public class EmployeeModel implements Identifier {
-    String name;
-    String email;
-    String password;
+    private String name;
+    private String surname;
+    private String email;
+    private String password;
+    private String birhdate;
 
     ProviderFactory.ProviderType providerType;
 
     public EmployeeModel(EmployeeForm ef, ProviderFactory.ProviderType providerType) {
         name = ef.getName();
+        surname = ef.getSurname();
         email = ef.getEmail();
         password = ef.getPassword();
+        birhdate = ef.getBirhdate();
 
         this.providerType = providerType;
     }
@@ -43,6 +47,22 @@ public class EmployeeModel implements Identifier {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getBirhdate() {
+        return birhdate;
+    }
+
+    public void setBirhdate(String birhdate) {
+        this.birhdate = birhdate;
     }
 
     public void save() throws IOException {

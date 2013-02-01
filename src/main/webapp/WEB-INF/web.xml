@@ -8,10 +8,6 @@
     <servlet>
         <servlet-name>employeeform</servlet-name>
         <servlet-class>com.in6k.employees.servlet.EmployeeFormServlet</servlet-class>
-        <init-param>
-            <param-name>provider</param-name>
-            <param-value>xml</param-value>
-        </init-param>
     </servlet>
 
     <servlet>
