@@ -20,6 +20,6 @@ public class FormServlet extends HttpServlet {
         User user = (User) xmlDecoder.readObject();
 
         req.setAttribute("user", user);
-        req.getRequestDispatcher("/index.jsp").include(req, resp);
+        req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
     }
 }

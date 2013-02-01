@@ -12,7 +12,7 @@
     <title></title>
 </head>
 <body>
-<form name="test" method="post" action="formvalidator">
+<form name="test" method="post" action="/employeeform">
     <%!
         private String checkValue(String value) {
             return value != null ? value : "";
@@ -73,7 +73,7 @@
     </p>
 
     <p style="color: <%=colors.get("confpass")%>"><b>Confirm password:</b><br>
-        <input name="confpass" type="password" size="40" value="<%=setFieldParam(request, "confpass")%>">
+        <input name="passwordConfirmation" type="password" size="40" value="<%=setFieldParam(request, "confpass")%>">
     </p>
 
     <p style="color: <%=colors.get("birhdate")%>"><b>Birth date:</b><br>

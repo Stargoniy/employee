@@ -4,19 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-    <!--<servlet>-->
-        <!--<servlet-name>simpleservlet</servlet-name>-->
-        <!--<servlet-class>com.in6k.employeeservlet.SimpleServlet</servlet-class>-->
-    <!--</servlet>-->
-
-    <!--<servlet>-->
-        <!--<servlet-name>formserlet</servlet-name>-->
-        <!--<servlet-class>com.in6k.employeeservlet.FormServlet</servlet-class>-->
-    <!--</servlet>-->
 
     <servlet>
-        <servlet-name>formvalidatorserlet</servlet-name>
-        <servlet-class>com.in6k.employees.servlet.FormValidatorServlet</servlet-class>
+        <servlet-name>employeeform</servlet-name>
+        <servlet-class>com.in6k.employees.servlet.EmployeeFormServlet</servlet-class>
+        <init-param>
+            <param-name>provider</param-name>
+            <param-value>xml</param-value>
+        </init-param>
     </servlet>
 
     <servlet>
@@ -24,24 +19,15 @@
         <servlet-class>com.in6k.employees.servlet.UserListServlet</servlet-class>
     </servlet>
 
-    <servlet>
-        <servlet-name>formservlet</servlet-name>
-        <servlet-class>com.in6k.employees.servlet.FormServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>formservlet</servlet-name>-->
+        <!--<servlet-class>com.in6k.employees.servlet.FormServlet</servlet-class>-->
+    <!--</servlet>-->
 
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>simpleservlet</servlet-name>-->
-        <!--<url-pattern>/welcome</url-pattern>-->
-    <!--</servlet-mapping>-->
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>formserlet</servlet-name>-->
-        <!--<url-pattern>/form</url-pattern>-->
-    <!--</servlet-mapping>-->
 
     <servlet-mapping>
-        <servlet-name>formvalidatorserlet</servlet-name>
-        <url-pattern>/formvalidator</url-pattern>
+        <servlet-name>employeeform</servlet-name>
+        <url-pattern>/employeeform</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -49,8 +35,8 @@
         <url-pattern>/userlist</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>formservlet</servlet-name>
-        <url-pattern>/form</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>formservlet</servlet-name>-->
+        <!--<url-pattern>/form</url-pattern>-->
+    <!--</servlet-mapping>-->
 </web-app>
