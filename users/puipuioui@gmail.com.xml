@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_11" class="java.beans.XMLDecoder">
+ <object class="com.in6k.employees.User">
+  <void property="birhdate">
+   <string>12-12-11998</string>
+  </void>
+  <void property="email">
+   <string>puipuioui@gmail.com</string>
+  </void>
+  <void property="name">
+   <string>jgfhjgfh</string>
+  </void>
+  <void property="pass">
+   <string>345</string>
+  </void>
+  <void property="surName">
+   <string>gfhjgfhj</string>
+  </void>
+ </object>
+</java>
