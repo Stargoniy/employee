@@ -15,12 +15,6 @@
         <servlet-class>com.in6k.employees.servlet.UserListServlet</servlet-class>
     </servlet>
 
-    <!--<servlet>-->
-        <!--<servlet-name>formservlet</servlet-name>-->
-        <!--<servlet-class>com.in6k.employees.servlet.FormServlet</servlet-class>-->
-    <!--</servlet>-->
-
-
     <servlet-mapping>
         <servlet-name>employeeform</servlet-name>
         <url-pattern>/employeeform</url-pattern>
@@ -30,9 +24,4 @@
         <servlet-name>userlist</servlet-name>
         <url-pattern>/userlist</url-pattern>
     </servlet-mapping>
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>formservlet</servlet-name>-->
-        <!--<url-pattern>/form</url-pattern>-->
-    <!--</servlet-mapping>-->
 </web-app>

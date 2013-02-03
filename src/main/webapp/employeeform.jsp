@@ -4,7 +4,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
-<%@ page import="com.in6k.employees.User" %>
 <%@ page import="java.util.Set" %>
 <%@ page import="com.in6k.employees.domain.EmployeeModel" %>
 

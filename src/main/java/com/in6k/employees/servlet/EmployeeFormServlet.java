@@ -19,9 +19,11 @@ public class EmployeeFormServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        EmployeeModel em = new EmployeeModel(ProviderFactory.ProviderType.XML);
-        em.load(new File(Config.getUsersDir() + req.getParameter("email") + ".xml"));
-        req.setAttribute("employee", em);
+        if (req.getParameter("email") != null) {
+            EmployeeModel em = new EmployeeModel(ProviderFactory.ProviderType.XML);
+            em.load(new File(Config.getUsersDir() + req.getParameter("email") + ".xml"));
+            req.setAttribute("employee", em);
+        }
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
     }
 

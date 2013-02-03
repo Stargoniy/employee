@@ -1,6 +1,5 @@
 package com.in6k.employees.servlet;
 
-import com.in6k.employees.User;
 import com.in6k.employees.domain.EmployeeModel;
 import com.in6k.employees.persistance.Config;
 import com.in6k.employees.persistance.ProviderFactory;
@@ -9,9 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.beans.XMLDecoder;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,4 @@
-<%@ taglib prefix="c"
-           uri="http://java.sun.com/jsp/jstl/core" %>
-
-<%@ page import="com.in6k.employees.User" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.in6k.employees.domain.EmployeeModel" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
