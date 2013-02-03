@@ -16,9 +16,10 @@ public class XmlProvider implements DataProvider {
 
     @Override
     public void save(Identifier identifier) throws IOException {
-        FileOutputStream fos = new FileOutputStream(path + "/" + identifier.getIdentifier() + ".xml");
+        File file = new File(path + identifier.getIdentifier() + ".xml");
+        FileOutputStream fos = new FileOutputStream(file);
         XMLEncoder xe = new XMLEncoder(fos);
-        xe.writeObject(this);
+        xe.writeObject(identifier);
         xe.flush();
         xe.close();
         fos.close();

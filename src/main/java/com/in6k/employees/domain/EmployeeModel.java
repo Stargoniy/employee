@@ -14,7 +14,10 @@ public class EmployeeModel implements Identifier {
     private String password;
     private String birhdate;
 
-    ProviderFactory.ProviderType providerType;
+    private ProviderFactory.ProviderType providerType;
+
+    public EmployeeModel() {
+    }
 
     public EmployeeModel(EmployeeForm ef, ProviderFactory.ProviderType providerType) {
         name = ef.getName();
@@ -72,6 +75,14 @@ public class EmployeeModel implements Identifier {
 
     public void save() throws IOException {
         ProviderFactory.create(providerType).save(this);
+    }
+
+    public ProviderFactory.ProviderType getProviderType() {
+        return providerType;
+    }
+
+    public void setProviderType(ProviderFactory.ProviderType providerType) {
+        this.providerType = providerType;
     }
 
     public void load(File file) throws IOException {
