@@ -2,12 +2,14 @@ package com.in6k.employees.servlet;
 
 import com.in6k.employees.domain.EmployeeModel;
 import com.in6k.employees.form.EmployeeForm;
+import com.in6k.employees.persistance.Config;
 import com.in6k.employees.persistance.ProviderFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -17,6 +19,9 @@ public class EmployeeFormServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        EmployeeModel em = new EmployeeModel(ProviderFactory.ProviderType.XML);
+        em.load(new File(Config.getUsersDir() + req.getParameter("email") + ".xml"));
+        req.setAttribute("employee", em);
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
     }
 

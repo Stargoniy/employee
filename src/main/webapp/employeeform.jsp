@@ -6,6 +6,7 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page import="com.in6k.employees.User" %>
 <%@ page import="java.util.Set" %>
+<%@ page import="com.in6k.employees.domain.EmployeeModel" %>
 
 <html>
 <html>
@@ -20,19 +21,19 @@
         }
         private String setFieldParam(HttpServletRequest request, String value) {
             String result = "";
-            User user;
-            if (request.getAttribute("user") != null) {
-                user = (User)request.getAttribute("user");
+            EmployeeModel employee;
+            if (request.getAttribute("employee") != null) {
+                employee = (EmployeeModel)request.getAttribute("employee");
                 if (value.equals("name")) {
-                    result = user.getName();
+                    result = employee.getName();
                 } else if (value.equals("surname")) {
-                    result = user.getSurName();
+                    result = employee.getSurname();
                 } else if (value.equals("email")) {
-                    result = user.getEmail();
-                } else if (value.equals("pass") || value.equals("confpass")) {
-                    result = user.getPass();
+                    result = employee.getEmail();
+                } else if (value.equals("password") || value.equals("passwordConfirmation")) {
+                    result = employee.getPassword();
                 } else if (value.equals("birhdate")) {
-                    result = user.getBirhdate();
+                    result = employee.getBirhdate();
                 }
             } else if (request.getParameter(value) != null) {
                 result = request.getParameter(value);

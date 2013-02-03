@@ -15,7 +15,7 @@
     List<EmployeeModel> employeeModels = (List<EmployeeModel>)request.getAttribute("employees");
     for (EmployeeModel e: employeeModels) {
         %>
-            <h3 style="color: #6005ff"><%=e.getEmail() + " "%><a href=<%="form?email=" + e.getEmail()%>>edit</a></h3>
+            <h3 style="color: #6005ff"><%=e.getEmail() + " "%><a href=<%="employeeform?email=" + e.getEmail()%>>edit</a></h3>
             <h4><%="Name: " + e.getName()%></h4>
             <h4><%="SurName: " + e.getSurname()%></h4>
             <h4><%="Password: " + e.getPassword()%></h4>
