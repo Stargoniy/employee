@@ -1,7 +1,5 @@
 package com.in6k.employees.persistance;
 
-import java.io.File;
-
 public class ProviderFactory {
     public enum ProviderType { XML, DB }
 

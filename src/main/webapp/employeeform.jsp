@@ -1,11 +1,8 @@
-<%@ taglib prefix="c"
-           uri="http://java.sun.com/jsp/jstl/core" %>
-
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.Map" %>
-<%@ page import="java.util.HashMap" %>
-<%@ page import="java.util.Set" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="com.in6k.employees.domain.EmployeeModel" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.util.Set" %>
 
 <html>
 <html>
@@ -15,9 +12,6 @@
 <body>
 <form name="test" method="post" action="/employeeform">
     <%!
-        private String checkValue(String value) {
-            return value != null ? value : "";
-        }
         private String setFieldParam(HttpServletRequest request, String value) {
             String result = "";
             EmployeeModel employee;
