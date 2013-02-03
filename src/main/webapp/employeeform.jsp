@@ -5,6 +5,7 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="com.in6k.employees.User" %>
+<%@ page import="java.util.Set" %>
 
 <html>
 <html>
@@ -44,14 +45,14 @@
         colors.put("name", "black");
         colors.put("surname", "black");
         colors.put("email", "black");
-        colors.put("pass", "black");
-        colors.put("confpass", "black");
+        colors.put("password", "black");
+        colors.put("passwordConfirmation", "black");
         colors.put("birhdate", "black");
 
-        if (request.getAttribute("valid") != null && !((List<String>)request.getAttribute("valid")).isEmpty()) {
-            List<String> notCorrectValues = (List<String>)request.getAttribute("valid");
-            for(String s: notCorrectValues) {
-                colors.put(s, "red");
+        if (request.getAttribute("errors") != null && !((Set<String>)request.getAttribute("errors")).isEmpty()) {
+            Set<String> errors = (Set<String>)request.getAttribute("errors");
+            for(String err: errors) {
+                colors.put(err, "red");
             }
         }
     %>
@@ -68,12 +69,12 @@
         <input name="email" type="text" size="40" value="<%=setFieldParam(request, "email")%>">
     </p>
 
-    <p style="color: <%=colors.get("pass")%>"><b>Password:</b><br>
-        <input name="pass" type="password" size="40" value="<%=setFieldParam(request, "pass")%>">
+    <p style="color: <%=colors.get("password")%>"><b>Password:</b><br>
+        <input name="password" type="password" size="40" value="<%=setFieldParam(request, "password")%>">
     </p>
 
-    <p style="color: <%=colors.get("confpass")%>"><b>Confirm password:</b><br>
-        <input name="passwordConfirmation" type="password" size="40" value="<%=setFieldParam(request, "confpass")%>">
+    <p style="color: <%=colors.get("passwordConfirmation")%>"><b>Confirm password:</b><br>
+        <input name="passwordConfirmation" type="password" size="40" value="<%=setFieldParam(request, "passwordConfirmation")%>">
     </p>
 
     <p style="color: <%=colors.get("birhdate")%>"><b>Birth date:</b><br>

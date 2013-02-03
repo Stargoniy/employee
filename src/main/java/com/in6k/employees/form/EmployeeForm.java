@@ -1,6 +1,7 @@
 package com.in6k.employees.form;
 
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 public class EmployeeForm {
     private static final String VALID_NAME_REGEXP = "[a-zA-Z]{2,}";
@@ -77,49 +78,34 @@ public class EmployeeForm {
         this.passwordConfirmation = passwordConfirmation;
     }
 
-    public Map<String, String> validate() {
-        return null;
+    public Set<String> validate() {
+        Set<String> result = new ConcurrentSkipListSet<String>();
+
+        if (!isValidValue(this.getName(), VALID_NAME_REGEXP)) {
+            result.add("name");
+        }
+        if (!isValidValue(this.getSurname(), VALID_SURNAME_REGEXP)) {
+            result.add("surname");
+        }
+        if (!isValidValue(this.getEmail(), VALID_EMAIL_REGEXP)) {
+            result.add("email");
+        }
+        if (!isValidValue(this.getPassword(), VALID_PASS_REGEXP)) {
+            result.add("password");
+        }
+        if (!isValidValue(this.getPasswordConfirmation(), VALID_CONFPASS_REGEXP)) {
+            result.add("passwordConfirmation");
+        }
+        if (!isValidValue(this.getBirhdate(), VALID_BIRTHDATE_REGEXP)) {
+            result.add("birhdate");
+        }
+        return result;
     }
 
-    //    private boolean isValid(HttpServletRequest request) {
-//        errors.clear();
-//        boolean result = true;
-//        if (!isValidValue(request, "name", VALID_NAME_REGEXP)) {
-//            result = false;
-//        }
-//        if (!isValidValue(request, "surname", VALID_SURNAME_REGEXP)) {
-//            result = false;
-//        }
-//        if (!isValidValue(request, "email", VALID_EMAIL_REGEXP)) {
-//            result = false;
-//        }
-//        if (!isValidValue(request, "pass", VALID_PASS_REGEXP)) {
-//            result = false;
-//        } else {
-//            if (!isValidValue(request, "confpass", VALID_CONFPASS_REGEXP)) {
-//                result = false;
-//            } else {
-//                if (!request.getParameter("pass").equals(request.getParameter("confpass"))) {
-//                    result = false;
-//                    errors.add("confpass");
-//                }
-//            }
-//        }
-//        if (!isValidValue(request, "birhdate", VALID_BIRTHDATE_REGEXP)) {
-//            result = false;
-//        }
-//        return result;
-//    }
-//
-//    private boolean isValidValue(HttpServletRequest request, String param, String pattern) {
-//        if (!request.getParameter(param).matches(pattern)) {
-//            errors.add(param);
-//            if (param.equals("pass")) {
-//                errors.add("confpass");
-//            }
-//            return false;
-//        } else {
-//            return true;
-//        }
-//    }
+    private boolean isValidValue(String value, String pattern) {
+        if (value == null) {
+            return false;
+        }
+        return value.matches(pattern);
+    }
 }

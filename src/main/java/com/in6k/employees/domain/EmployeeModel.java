@@ -4,6 +4,7 @@ import com.in6k.employees.form.EmployeeForm;
 import com.in6k.employees.persistance.Identifier;
 import com.in6k.employees.persistance.ProviderFactory;
 
+import java.io.File;
 import java.io.IOException;
 
 public class EmployeeModel implements Identifier {
@@ -22,6 +23,10 @@ public class EmployeeModel implements Identifier {
         password = ef.getPassword();
         birhdate = ef.getBirhdate();
 
+        this.providerType = providerType;
+    }
+
+    public EmployeeModel(ProviderFactory.ProviderType providerType) {
         this.providerType = providerType;
     }
 
@@ -67,6 +72,15 @@ public class EmployeeModel implements Identifier {
 
     public void save() throws IOException {
         ProviderFactory.create(providerType).save(this);
+    }
+
+    public void load(File file) throws IOException {
+        EmployeeModel model = ProviderFactory.create(providerType).load(file);
+        this.setName(model.getName());
+        this.setSurname(model.getSurname());
+        this.setEmail(model.getEmail());
+        this.setPassword(model.getPassword());
+        this.setBirhdate(model.getBirhdate());
     }
 
     @Override

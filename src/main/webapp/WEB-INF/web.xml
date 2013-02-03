@@ -11,7 +11,7 @@
     </servlet>
 
     <servlet>
-        <servlet-name>userlistservlet</servlet-name>
+        <servlet-name>userlist</servlet-name>
         <servlet-class>com.in6k.employees.servlet.UserListServlet</servlet-class>
     </servlet>
 
@@ -27,7 +27,7 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>userlistservlet</servlet-name>
+        <servlet-name>userlist</servlet-name>
         <url-pattern>/userlist</url-pattern>
     </servlet-mapping>
 

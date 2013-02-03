@@ -1,6 +1,9 @@
 package com.in6k.employees.servlet;
 
 import com.in6k.employees.User;
+import com.in6k.employees.domain.EmployeeModel;
+import com.in6k.employees.persistance.Config;
+import com.in6k.employees.persistance.ProviderFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,16 +19,15 @@ import java.util.List;
 public class UserListServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        File[] usersFiles = new File("/home/employee/IdeaProjects/employees/users/").listFiles();
-        List<User> users = new ArrayList<User>();
+        File[] employeesFiles = new File(Config.getUsersDir()).listFiles();
+        List<EmployeeModel> employeeModels = new ArrayList<EmployeeModel>();
 
-
-        for (File f: usersFiles) {
-            FileInputStream fis = new FileInputStream(f);
-            XMLDecoder xmlDecoder = new XMLDecoder(fis);
-            users.add((User) xmlDecoder.readObject());
+        for (File f: employeesFiles) {
+            EmployeeModel employeeModel = new EmployeeModel(ProviderFactory.ProviderType.XML);
+            employeeModel.load(f);
+            employeeModels.add(employeeModel);
         }
-        req.setAttribute("users", users);
+        req.setAttribute("employees", employeeModels);
         req.getRequestDispatcher("/userlist.jsp").include(req, resp);
     }
 }
