@@ -13,13 +13,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserListServlet extends HttpServlet{
+public class UserListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         File[] employeesFiles = new File(Config.getUsersDir()).listFiles();
         List<EmployeeModel> employeeModels = new ArrayList<EmployeeModel>();
 
-        for (File f: employeesFiles) {
+        for (File f : employeesFiles) {
             EmployeeModel employeeModel = new EmployeeModel(ProviderFactory.ProviderType.XML);
             employeeModel.load(f);
             employeeModels.add(employeeModel);
