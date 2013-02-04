@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.in6k.employees.domain">
+    <class name="com.in6k.employees.domain.EmployeeModel" table="employees">
+        <id name="email" type="string" column="email"></id>
+        <property name="name" type="string" column="name" />
+        <property name="surname" type="string" column="surname" />
+        <property name="email" type="string" column="email" />
+        <property name="password" type="string" column="password" />
+        <property name="birhdate" type="string" column="birhdate" />
+    </class>
+</hibernate-mapping>
