@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127b4ecb-7135-49c8-8830-1fa168aac351" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jboss_jboss_j2ee_3_2_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/employees/db/HibernateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/in6k/employees/db/HibernateUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employees.iml" afterPath="$PROJECT_DIR$/employees.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/employees_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/employees_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="employees.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +23,9 @@
     <file path="/hibernate.cfg.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360003098554" ignored="false" />
     <file path="/EmployeeModel.hbm.xml" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360003729599" ignored="false" />
     <file path="/HibernateUtil.java" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004284837" ignored="false" />
-    <file path="/dummy.sql" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004196541" ignored="false" />
-    <file path="/a.sql" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004200152" ignored="false" />
+    <file path="/dummy.sql" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004942377" ignored="false" />
+    <file path="/a.sql" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004944497" ignored="false" />
+    <file path="/employee.employees" changelist="127b4ecb-7135-49c8-8830-1fa168aac351" time="1360004673667" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,18 +110,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employee.employees" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/employee..employees">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -147,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/persistance/XmlProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/persistance/ProviderFactory.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/employeeform.jsp" />
@@ -161,8 +141,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/domain/EmployeeModel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/EmployeeModel.hbm.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="dbtable:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/employee..employees" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employees/db/HibernateUtil.java" />
+        <option value="db-console:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/" />
+        <option value="dbtable:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/employee..employees" />
       </list>
     </option>
   </component>
@@ -743,6 +724,7 @@
     <frame x="65" y="24" width="1615" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -762,8 +744,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2690096" sideWeight="0.6703663" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20766774" sideWeight="0.67480576" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32519424" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20766774" sideWeight="0.67480576" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32519424" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -915,19 +897,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="19" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="59" selection-start="238" selection-end="238" vertical-scroll-proportion="0.16513762">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/76b4764c/bb235965-b268-4489-9e4d-fe0aff924ff8/employee..employees">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="19" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
