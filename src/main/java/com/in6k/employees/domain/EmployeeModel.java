@@ -8,11 +8,20 @@ import java.io.File;
 import java.io.IOException;
 
 public class EmployeeModel implements Identifier {
+    private int id;
     private String name;
     private String surname;
     private String email;
     private String password;
     private String birhdate;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     private ProviderFactory.ProviderType providerType;
 

@@ -4,7 +4,9 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.in6k.employees.domain">
     <class name="com.in6k.employees.domain.EmployeeModel" table="employees">
-        <id name="email" type="string" column="email"></id>
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
         <property name="name" type="string" column="name" />
         <property name="surname" type="string" column="surname" />
         <property name="email" type="string" column="email" />
