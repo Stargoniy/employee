@@ -20,7 +20,8 @@ public class HibernateUtil {
 //        File f =new File(".");
 
         SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-//        Session session = sessionFactory.openSession();
-//        session.save(employeeModel);
+        Session session = sessionFactory.openSession();
+        session.save(employeeModel);
+        session.close();
     }
 }

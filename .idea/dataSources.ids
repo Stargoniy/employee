@@ -20,7 +20,7 @@
       <column name="email" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
       <column name="password" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
       <column name="birhdate" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MA==" />
       <primary-key name="PRIMARY" columns="id" />
     </table>
   </data-source>
